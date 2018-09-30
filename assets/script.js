@@ -1,9 +1,9 @@
-var animals = ["dog", "cat", "bird", "goat", "pig", "cow", "hedgehog", "horse"];
+var animals = ["dog", "cat", "bird", "goat", "pig", "cow", "hedgehog", "horse", "lion", "tiger", "bear"];
 
 var key = config
 function displayGif() {
     var animal = $(this).attr("data-name");
-    var queryUrl = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key="+key+"&limit=10";
+    var queryUrl = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key="+key+"&limit=10";
 
     $.ajax({
         url: queryUrl,
